@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orders</title>
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+            }
+
+            .input-group {
+                display: flex;
+                gap: 0 4px;
+            }
+
+            .header {
+                flex-shrink: 0
+            }
+
+            .content {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <form id="form" action="№" method="GET">
+                <div class="input-group">
+                    <div>
+                        OrderID:
+                    </div>
+    
+                    <input type="text" name="order_uid">
+                </div>
+
+                <button type="submit">
+                    <span>SUBMIT</span>
+                </button>
+            </form>
+        </header>
+
+        <div class="content">
+            <pre id="orderData"></pre>
+        </div>
+
+        <script defer>
+            const form = document.getElementById('form')
+            const orderData = document.getElementById('orderData')
+
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault()
+
+                const form = event.currentTarget
+                const orderUid = form.elements['order_uid'].value
+
+                const url = new URL('http://localhost:8080/order')
+                url.searchParams.set('order_uid', orderUid)
+
+                try {
+                    const response = await fetch(url, {
+                        method: 'GET',
+                    })
+
+                    const order = await response.json()
+
+                    orderData.innerHTML = JSON.stringify(order, null, 4)
+                } catch (err) {
+                    alert(err)
+                }
+            })
+        </script>
+    </body>
+</html>
