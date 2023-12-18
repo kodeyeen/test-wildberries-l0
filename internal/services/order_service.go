@@ -6,9 +6,9 @@ import (
 	"log"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/kodeyeen/wb-l0/internal/dtos"
-	"github.com/kodeyeen/wb-l0/internal/models"
-	"github.com/kodeyeen/wb-l0/internal/repositories"
+	"github.com/kodeyeen/test-wildberries-l0/internal/dtos"
+	"github.com/kodeyeen/test-wildberries-l0/internal/models"
+	"github.com/kodeyeen/test-wildberries-l0/internal/repositories"
 	"github.com/nats-io/stan.go"
 )
 

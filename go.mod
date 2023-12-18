@@ -1,4 +1,4 @@
-module github.com/kodeyeen/wb-l0
+module github.com/kodeyeen/test-wildberries-l0
 
 go 1.21.1
 

@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/kodeyeen/wb-l0/internal/dtos"
-	"github.com/kodeyeen/wb-l0/internal/mocks"
-	"github.com/kodeyeen/wb-l0/internal/models"
+	"github.com/kodeyeen/test-wildberries-l0/internal/dtos"
+	"github.com/kodeyeen/test-wildberries-l0/internal/mocks"
+	"github.com/kodeyeen/test-wildberries-l0/internal/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

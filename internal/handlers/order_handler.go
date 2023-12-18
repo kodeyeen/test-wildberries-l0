@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/kodeyeen/wb-l0/internal/services"
+	"github.com/kodeyeen/test-wildberries-l0/internal/services"
 )
 
 type orderHandler struct {

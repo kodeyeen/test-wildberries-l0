@@ -6,8 +6,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/kodeyeen/wb-l0/internal/models"
-	"github.com/kodeyeen/wb-l0/pkg/caching"
+	"github.com/kodeyeen/test-wildberries-l0/internal/models"
+	"github.com/kodeyeen/test-wildberries-l0/pkg/caching"
 )
 
 type OrderRepository interface {

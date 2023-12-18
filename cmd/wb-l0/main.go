@@ -9,10 +9,10 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/joho/godotenv"
-	"github.com/kodeyeen/wb-l0/internal/handlers"
-	"github.com/kodeyeen/wb-l0/internal/repositories"
-	"github.com/kodeyeen/wb-l0/internal/services"
-	"github.com/kodeyeen/wb-l0/pkg/caching"
+	"github.com/kodeyeen/test-wildberries-l0/internal/handlers"
+	"github.com/kodeyeen/test-wildberries-l0/internal/repositories"
+	"github.com/kodeyeen/test-wildberries-l0/internal/services"
+	"github.com/kodeyeen/test-wildberries-l0/pkg/caching"
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/stan.go"
 )

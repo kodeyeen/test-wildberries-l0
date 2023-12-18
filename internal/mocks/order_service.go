@@ -3,7 +3,7 @@ package mocks
 import (
 	"context"
 
-	"github.com/kodeyeen/wb-l0/internal/models"
+	"github.com/kodeyeen/test-wildberries-l0/internal/models"
 	"github.com/nats-io/stan.go"
 	"github.com/stretchr/testify/mock"
 )
